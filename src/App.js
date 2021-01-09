@@ -3,7 +3,7 @@ import Search from './search'
 import BigCard from './bigCard'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
-import { Route, BrowserRouter, useParams } from 'react-router-dom'
+import { Route, BrowserRouter } from 'react-router-dom'
 
 function App() {
 

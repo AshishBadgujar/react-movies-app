@@ -8,13 +8,13 @@ export default function BigCard() {
 
     const { id } = useParams();
     useEffect(() => {
-        const getMovie = async () => {
+        const getMovie = async (id) => {
             let res = await Axios.get(`http://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_API_KEY}`)
             let res2 = res.data
             setMovie(res2)
             setLoading(false)
         }
-        getMovie();
+        getMovie(id);
     }, [])
     return (
         <div className="card mb-3 p-3" >
