@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="container py-2 text-center">
                     <p className="mb-0">Developed By :
                     <span style={{ color: "#ffc107" }}>Ashish</span>
-                    . Using React & Redux JS integrated with external movies data API
+                    . Using React JS integrated with external movies data API
                     <a href="https://www.omdbapi.com/" rel="noreferrer" target="_blank">OMDB</a>
                     </p>
                 </div>

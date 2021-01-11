@@ -78,7 +78,7 @@ export default function BigCard() {
         categoryAxis.renderer.minGridDistance = 10;
 
         categoryAxis.renderer.labels.template.adapter.add("dy", function (dy, target) {
-            if (target.dataItem && target.dataItem.index & 2 == 2) {
+            if (target.dataItem && target.dataItem.index === 2) {
                 return dy + 25;
             }
             return dy;
