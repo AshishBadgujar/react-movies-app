@@ -1,15 +1,23 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import Axios from 'axios'
 
 export default function Card({ item }) {
     const history = useHistory();
 
-    const handleClick = (movieId) => {
-        console.log(movieId)
-        history.push(`/${movieId}`)
+    const handleClick = async (movieId) => {
+        let res = await Axios.get(`http://www.omdbapi.com/?i=${movieId}&apikey=${process.env.REACT_APP_API_KEY}`)
+        let res2 = res.data
+        console.log(res2)
+        history.push({
+            pathname: `/${movieId}`,
+            state: {
+                data: res2
+            },
+        });
     }
     return (
-        <div className="card my-2" style={{ width: "18rem", height: "auto" }} onClick={() => handleClick(item.imdbID)}>
+        <div className="card my-2 shadow" style={{ width: "18rem", height: "auto" }} onClick={() => handleClick(item.imdbID)}>
             <img src={item.Poster} style={{ height: "14.5rem" }} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title m-0">{item.Title}</h5>

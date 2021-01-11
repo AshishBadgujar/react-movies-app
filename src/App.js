@@ -6,15 +6,12 @@ import Footer from './components/footer'
 import { Route, BrowserRouter } from 'react-router-dom'
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <div className="container" style={{ height: "100%" }}>
-          <Route exact path="/" component={Search} />
-          <Route path="/:id" component={BigCard} />
-        </div>
+        <Route exact path="/" component={Search} />
+        <Route path="/:id" component={BigCard} />
         <Footer />
       </BrowserRouter>
     </>

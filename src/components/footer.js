@@ -8,7 +8,7 @@ export default function Footer() {
                     <p className="mb-0">Developed By :
                     <span style={{ color: "#ffc107" }}>Ashish</span>
                     . Using React & Redux JS integrated with external movies data API
-                    <a href="https://www.omdbapi.com/" target="_blank">OMDB</a>
+                    <a href="https://www.omdbapi.com/" rel="noreferrer" target="_blank">OMDB</a>
                     </p>
                 </div>
             </div>
