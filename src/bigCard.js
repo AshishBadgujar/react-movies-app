@@ -85,6 +85,7 @@ export default function BigCard() {
         });
 
         let valueAxis = chart2.yAxes.push(new am4charts.ValueAxis());
+        valueAxis.dataFields.category = "Value";
         // Create series
         let series = chart2.series.push(new am4charts.ColumnSeries());
         series.dataFields.valueY = "Value";
