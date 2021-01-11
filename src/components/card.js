@@ -6,9 +6,8 @@ export default function Card({ item }) {
     const history = useHistory();
 
     const handleClick = async (movieId) => {
-        let res = await Axios.get(`http://www.omdbapi.com/?i=${movieId}&apikey=${process.env.REACT_APP_API_KEY}`)
+        let res = await Axios.get(`https://www.omdbapi.com/?i=${movieId}&apikey=${process.env.REACT_APP_API_KEY}`)
         let res2 = res.data
-        console.log(res2)
         history.push({
             pathname: `/${movieId}`,
             state: {

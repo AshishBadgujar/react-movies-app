@@ -9,17 +9,14 @@ function Search() {
 
     const getData = async (e) => {
         setText(e.target.value)
-        console.log(text)
-        let res = await Axios.get(`http://www.omdbapi.com/?s=${text}&apikey=${process.env.REACT_APP_API_KEY}`)
+        let res = await Axios.get(`https://www.omdbapi.com/?s=${text}&apikey=${process.env.REACT_APP_API_KEY}`)
         let res2 = res.data
         if (res2.Response === "True") {
-            console.log("array", res2.Search)
             setMovies(res2.Search)
             setLoading(false)
         } else {
             setLoading(true)
         }
-        console.log(res2)
     }
     return (
         <>
