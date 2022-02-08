@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## screenshots
+![screencapture-react-movies-app-nu-vercel-app-2021-01-11-11_54_07](https://user-images.githubusercontent.com/67192558/152919900-4b6cbefe-d5f0-4362-b3f4-044919ec2ecb.png)
+![screencapture-react-movies-app-nu-vercel-app-tt0458339-2021-01-11-11_54_31](https://user-images.githubusercontent.com/67192558/152919909-2945b913-e0fe-45e0-a4d7-4e4a13f70d4c.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
